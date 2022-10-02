@@ -110,7 +110,7 @@ public class CreateJpanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 453, Short.MAX_VALUE)
+                        .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 703, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -146,10 +146,10 @@ public class CreateJpanel extends javax.swing.JPanel {
                                     .addComponent(txtPhoneNum)
                                     .addComponent(txtEmailID))))
                         .addGap(52, 52, 52))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(179, 179, 179)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnSave)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(281, 281, 281))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,9 +196,9 @@ public class CreateJpanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jEmailId)
                     .addComponent(txtEmailID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(49, 49, 49)
                 .addComponent(btnSave)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -213,29 +213,126 @@ public class CreateJpanel extends javax.swing.JPanel {
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
         
-        String name = txtName.getText();
-        String empID = txtEmployeeID.getText();
-        int age = Integer.parseInt(txtAge.getText());
-        String gender = txtGender.getText();
-        String startDate = txtStartDate.getText();
-        int level = Integer.parseInt(txtLevel.getText());
-        String teamInfo = txtTeamInfo.getText();
-        String positionTitle = txtPositionTilte.getText();
-        String phoneNumber = txtPhoneNum.getText();
-        String emailId = txtEmailID.getText();
-        
         EmployeeProfile em = history.addNewEmployee();
         
-        em.setName(name);
+        //String name = txtName.getText();
+        
+        int iCheck;
+        String strCheck;
+       
+        strCheck = txtName.getText().trim();
+        if(!strCheck.matches(".*\\d.*") && strCheck.length() >=2)
+        {
+            em.setName(txtName.getText());
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "Invalid Name. Name length should be greater than 2 and no digits.");
+        }
+        
+        //String empID = txtEmployeeID.getText();
+        
+        strCheck = txtEmployeeID.getText().trim();
+        if(!strCheck.matches(".*\\d.*") && strCheck.length() >=2)
+        {
+            em.setEmpID(txtEmployeeID.getText());
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "Invalid Emplyee ID. EmployeeID should be greater than 2 and no digits.");
+        }
+        
+        //int age = Integer.parseInt(txtAge.getText());
+        strCheck = txtAge.getText().trim();
+        if(strCheck.length()==2)
+        {
+            em.setAge(Integer.parseInt(txtAge.getText()));
+        }
+        else{
+           JOptionPane.showMessageDialog(this, "Invalid Input. Age should be 2 digits");
+        }
+        
+        
+        //String gender = txtGender.getText();
+        strCheck = txtGender.getText().trim();
+        if(!strCheck.matches(".*\\d.*") && strCheck.length() >=1)
+        {
+            em.setGender(txtGender.getText());
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "Invalid Gender. Gender length should be greater than 1 and no digits.");
+        }
+        
+        
+        //String startDate = txtStartDate.getText();
+        strCheck = txtStartDate.getText().trim();
+        if(strCheck.length()>0 && strCheck.matches("\\d\\d\\/\\d\\d\\/\\d\\d\\d\\d"))
+        {
+            em.setStartDate(txtStartDate.getText());
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "Invalid Input. Follow MM/DD/YYYY format.");
+        }
+        
+        //int level = Integer.parseInt(txtLevel.getText());
+        strCheck = txtLevel.getText().trim();
+        if(strCheck.length()==1)
+        {
+            em.setLevel(Integer.parseInt(txtLevel.getText()));
+        }
+        else{
+           JOptionPane.showMessageDialog(this, "Invalid Input. Level should be of 1 Digit.");
+        }
+        
+        //String teamInfo = txtTeamInfo.getText();
+        strCheck = txtTeamInfo.getText().trim();
+        if( strCheck.length() >=2)
+        {
+            em.setTeamInfo(txtTeamInfo.getText());
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "Invalid Information. Team Information should be greater than 2.");
+        }
+        
+        //String positionTitle = txtPositionTilte.getText();
+        strCheck = txtPositionTilte.getText().trim();
+        if( strCheck.length() >=2)
+        {
+            em.setPositionTitle(txtPositionTilte.getText());
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "Invalid Position. Position should be greater than 2.");
+        }
+        
+        //String phoneNumber = txtPhoneNum.getText();
+        strCheck = txtPhoneNum.getText().trim();
+        if(strCheck.length()==10)
+        {
+            em.setPhoneNumber((txtPhoneNum.getText()));
+        }
+        else{
+           JOptionPane.showMessageDialog(this, "Invalid Input. Phone number should be of 10 Digit.");
+        }
+        
+        //String emailId = txtEmailID.getText();
+        strCheck = txtEmailID.getText().trim();
+        if(strCheck.length()>0 && strCheck.matches(".*\\@.*\\..*"))
+        {
+            em.setEmailId(txtEmailID.getText());
+        }
+        else{
+           JOptionPane.showMessageDialog(this, "Invalid Input. Email Id cannot be empty.");
+        }
+        
+        
+        /*em.setName(name);
         em.setEmpID(empID);
         em.setAge(age);
         em.setGender(gender);
-        em.setStartDate(startDate);
+        em.setStartDate(StartDate);
         em.setLevel(level);
         em.setTeamInfo(teamInfo);
         em.setPositionTitle(positionTitle);
         em.setPhoneNumber(phoneNumber);
-        em.setEmailId(emailId);
+        em.setEmailId(emailId);*/
         
         JOptionPane.showMessageDialog(this,"New Employee Profile added.");
         
