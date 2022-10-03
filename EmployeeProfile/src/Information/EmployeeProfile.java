@@ -19,6 +19,17 @@ public class EmployeeProfile {
     private String positionTitle;
     private String phoneNumber;
     private String emailId;
+    private String image;
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    
 
     public String getName() {
         return name;
@@ -104,6 +115,4 @@ public class EmployeeProfile {
     public String toString(){
         return name;
     }
-    
-    
 }

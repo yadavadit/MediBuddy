@@ -56,6 +56,8 @@ public class CreateJpanel extends javax.swing.JPanel {
         txtPhoneNum = new javax.swing.JTextField();
         txtEmailID = new javax.swing.JTextField();
         btnSave = new javax.swing.JButton();
+        lblImagePath = new javax.swing.JLabel();
+        txtImagePath = new javax.swing.JTextField();
 
         jLabel8.setText("jLabel8");
 
@@ -102,6 +104,8 @@ public class CreateJpanel extends javax.swing.JPanel {
             }
         });
 
+        lblImagePath.setText("Image Path : ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -110,7 +114,7 @@ public class CreateJpanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 703, Short.MAX_VALUE)
+                        .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -126,30 +130,37 @@ public class CreateJpanel extends javax.swing.JPanel {
                                     .addComponent(jLevel, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addGap(49, 49, 49)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtName)
-                                    .addComponent(txtEmployeeID)
-                                    .addComponent(txtAge)
                                     .addComponent(txtGender)
                                     .addComponent(txtStartDate)
-                                    .addComponent(txtLevel)))
+                                    .addComponent(txtLevel)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(txtAge, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE)
+                                            .addComponent(txtEmployeeID, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE))
+                                        .addGap(0, 235, Short.MAX_VALUE))))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGap(12, 12, 12)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jPositionTitle)
                                     .addComponent(jTeamInfo)
                                     .addComponent(jPhoneNum)
-                                    .addComponent(jEmailId))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lblImagePath)
+                                        .addComponent(jEmailId)))
                                 .addGap(49, 49, 49)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtPositionTilte)
                                     .addComponent(txtTeamInfo)
                                     .addComponent(txtPhoneNum)
-                                    .addComponent(txtEmailID))))
+                                    .addComponent(txtEmailID)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(116, 116, 116)
+                                .addComponent(txtImagePath, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnSave)
+                                .addGap(33, 33, 33)))
                         .addGap(52, 52, 52))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnSave)
-                .addGap(281, 281, 281))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -157,13 +168,13 @@ public class CreateJpanel extends javax.swing.JPanel {
                 .addGap(16, 16, 16)
                 .addComponent(lblTitle)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jName)
                     .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtEmployeeID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jEmployeeID))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jEmployeeID)
+                    .addComponent(txtEmployeeID, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jAge)
@@ -173,8 +184,8 @@ public class CreateJpanel extends javax.swing.JPanel {
                     .addComponent(txtGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jGender))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jStartDate)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jStartDate, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -196,9 +207,12 @@ public class CreateJpanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jEmailId)
                     .addComponent(txtEmailID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49)
-                .addComponent(btnSave)
-                .addContainerGap(69, Short.MAX_VALUE))
+                .addGap(45, 45, 45)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSave)
+                    .addComponent(lblImagePath)
+                    .addComponent(txtImagePath, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(73, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -213,117 +227,99 @@ public class CreateJpanel extends javax.swing.JPanel {
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
         
-        EmployeeProfile em = history.addNewEmployee();
+        //EmployeeProfile em = history.addNewEmployee();
         
-        //String name = txtName.getText();
-        
-        int iCheck;
-        String strCheck;
+        //int empID = 0;
+        int age = 0;
+        int level = 0;
+        try {
+            //empID = Integer.parseInt(txtEmployeeID.getText());
+            age = Integer.parseInt(txtAge.getText()) ;
+            level = Integer.parseInt(txtLevel.getText());
+        }
+        catch (NumberFormatException nfe) {
+            JOptionPane.showMessageDialog(this, "Please enter values.");
+
+        }
        
-        strCheck = txtName.getText().trim();
-        if(!strCheck.matches(".*\\d.*") && strCheck.length() >=2)
-        {
-            em.setName(txtName.getText());
-        }
-        else{
-            JOptionPane.showMessageDialog(this, "Invalid Name. Name length should be greater than 2 and no digits.");
-        }
-        
-        //String empID = txtEmployeeID.getText();
-        
-        strCheck = txtEmployeeID.getText().trim();
-        if(!strCheck.matches(".*\\d.*") && strCheck.length() >=2)
-        {
-            em.setEmpID(txtEmployeeID.getText());
-        }
-        else{
-            JOptionPane.showMessageDialog(this, "Invalid Emplyee ID. EmployeeID should be greater than 2 and no digits.");
-        }
-        
+        String name = txtName.getText();
+        String empID = txtEmployeeID.getText();
         //int age = Integer.parseInt(txtAge.getText());
-        strCheck = txtAge.getText().trim();
-        if(strCheck.length()==2)
+        String gender = txtGender.getText();
+        String StartDate = txtStartDate.getText();
+        //int level = Integer.parseInt(txtLevel.getText());
+        String teamInfo = txtTeamInfo.getText();
+        String positionTitle = txtPositionTilte.getText();
+        String phoneNumber = txtPhoneNum.getText();
+        String emailId = txtEmailID.getText();
+        String image = txtImagePath.getText();
+
+        if(!name.matches("^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z])$"))
         {
-            em.setAge(Integer.parseInt(txtAge.getText()));
+            JOptionPane.showMessageDialog(this, "Invalid Name. Name length should be greater than 2 and no digits.");
+
         }
-        else{
-           JOptionPane.showMessageDialog(this, "Invalid Input. Age should be 2 digits");
-        }
-        
-        
-        //String gender = txtGender.getText();
-        strCheck = txtGender.getText().trim();
-        if(!strCheck.matches(".*\\d.*") && strCheck.length() >=1)
+       
+        else if(txtEmployeeID.getText().isEmpty())
         {
-            em.setGender(txtGender.getText());
+           
+            JOptionPane.showMessageDialog(this, "Invalid Input.");
         }
-        else{
-            JOptionPane.showMessageDialog(this, "Invalid Gender. Gender length should be greater than 1 and no digits.");
-        }
-        
-        
-        //String startDate = txtStartDate.getText();
-        strCheck = txtStartDate.getText().trim();
-        if(strCheck.length()>0 && strCheck.matches("\\d\\d\\/\\d\\d\\/\\d\\d\\d\\d"))
+       
+       
+        else if(txtAge.getText().length()!=2)
         {
-            em.setStartDate(txtStartDate.getText());
+            JOptionPane.showMessageDialog(this, "Invalid Input. Age should be of 2 Digit.");
         }
-        else{
+       
+       
+        else if(txtGender.getText().matches(".*\\d.*") || txtGender.getText().length()<1)
+        {
+            JOptionPane.showMessageDialog(this, "Invalid Gender. Gender should be greater than 0 and no digits.");
+        }
+
+        else if(!txtStartDate.getText().matches("^(?:(?:(?:0?[13578]|1[02])(\\/|-|\\.)31)\\1|" +
+           "(?:(?:0?[1,3-9]|1[0-2])(\\/|-|\\.)(?:29|30)\\2))" +
+           "(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:0?2(\\/|-|\\.)29\\3" +
+           "(?:(?:(?:1[6-9]|[2-9]\\d)?(?:0[48]|[2468][048]|" +
+           "[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|" +
+           "^(?:(?:0?[1-9])|(?:1[0-2]))(\\/|-|\\.)(?:0?[1-9]|1\\d|" +
+           "2[0-8])\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$"))
+        {
             JOptionPane.showMessageDialog(this, "Invalid Input. Follow MM/DD/YYYY format.");
         }
-        
-        //int level = Integer.parseInt(txtLevel.getText());
-        strCheck = txtLevel.getText().trim();
-        if(strCheck.length()==1)
+       
+        else if(txtLevel.getText().length()!=1)
         {
-            em.setLevel(Integer.parseInt(txtLevel.getText()));
+            JOptionPane.showMessageDialog(this, "Invalid Input. Level should be of 1 Digit.");
         }
-        else{
-           JOptionPane.showMessageDialog(this, "Invalid Input. Level should be of 1 Digit.");
-        }
-        
-        //String teamInfo = txtTeamInfo.getText();
-        strCheck = txtTeamInfo.getText().trim();
-        if( strCheck.length() >=2)
+       
+        else if(txtTeamInfo.getText().isEmpty())
         {
-            em.setTeamInfo(txtTeamInfo.getText());
+            JOptionPane.showMessageDialog(this, "Invalid Info. Team Info should not be empty.");
         }
-        else{
-            JOptionPane.showMessageDialog(this, "Invalid Information. Team Information should be greater than 2.");
-        }
-        
-        //String positionTitle = txtPositionTilte.getText();
-        strCheck = txtPositionTilte.getText().trim();
-        if( strCheck.length() >=2)
+
+        else if(txtPositionTilte.getText().length() <=2)
         {
-            em.setPositionTitle(txtPositionTilte.getText());
+            JOptionPane.showMessageDialog(this, "Invalid Title. Title should be greater than 2");
         }
-        else{
-            JOptionPane.showMessageDialog(this, "Invalid Position. Position should be greater than 2.");
-        }
-        
-        //String phoneNumber = txtPhoneNum.getText();
-        strCheck = txtPhoneNum.getText().trim();
-        if(strCheck.length()==10)
+
+        else if(txtPhoneNum.getText().length()!=10)
         {
-            em.setPhoneNumber((txtPhoneNum.getText()));
+            JOptionPane.showMessageDialog(this, "Invalid Input. Phone number should be of 10 Digit.");
         }
-        else{
-           JOptionPane.showMessageDialog(this, "Invalid Input. Phone number should be of 10 Digit.");
-        }
-        
-        //String emailId = txtEmailID.getText();
-        strCheck = txtEmailID.getText().trim();
-        if(strCheck.length()>0 && strCheck.matches(".*\\@.*\\..*"))
+
+        else if(!txtEmailID.getText().matches("^[a-zA-Z0-9_+&-]+(?:\\.[a-zA-Z0-9_+&-]+)*"+"@" + "(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$"))
         {
-            em.setEmailId(txtEmailID.getText());
+            JOptionPane.showMessageDialog(this, "Invalid Input. Email Id cannot be empty.");
         }
-        else{
-           JOptionPane.showMessageDialog(this, "Invalid Input. Email Id cannot be empty.");
-        }
-        
-        
-        /*em.setName(name);
+       
+       
+        else {
+ 
+        EmployeeProfile em = new EmployeeProfile();
+
+        em.setName(name);
         em.setEmpID(empID);
         em.setAge(age);
         em.setGender(gender);
@@ -332,7 +328,10 @@ public class CreateJpanel extends javax.swing.JPanel {
         em.setTeamInfo(teamInfo);
         em.setPositionTitle(positionTitle);
         em.setPhoneNumber(phoneNumber);
-        em.setEmailId(emailId);*/
+        em.setEmailId(emailId);
+        em.setImage(image);
+        
+        this.history.addNewEmployee(em);
         
         JOptionPane.showMessageDialog(this,"New Employee Profile added.");
         
@@ -346,15 +345,8 @@ public class CreateJpanel extends javax.swing.JPanel {
         txtPositionTilte.setText("");
         txtPhoneNum.setText("");
         txtEmailID.setText("");
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        txtImagePath.setText("");
+        }        
     }//GEN-LAST:event_btnSaveActionPerformed
 
 
@@ -371,11 +363,13 @@ public class CreateJpanel extends javax.swing.JPanel {
     private javax.swing.JLabel jPositionTitle;
     private javax.swing.JLabel jStartDate;
     private javax.swing.JLabel jTeamInfo;
+    private javax.swing.JLabel lblImagePath;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JTextField txtAge;
     private javax.swing.JTextField txtEmailID;
     private javax.swing.JTextField txtEmployeeID;
     private javax.swing.JTextField txtGender;
+    private javax.swing.JTextField txtImagePath;
     private javax.swing.JTextField txtLevel;
     private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtPhoneNum;

@@ -26,16 +26,56 @@ public class EmployeeProfileHistory {
         this.history = history;
     }
     
-  public EmployeeProfile addNewEmployee(){
+  public EmployeeProfile addNewEmployee(EmployeeProfile em){
       
-      EmployeeProfile newEmployee = new EmployeeProfile();
-      history.add(newEmployee);
-      return newEmployee;
-      
+//      EmployeeProfile newEmployee = new EmployeeProfile();
+//      history.add(newEmployee);
+//      return newEmployee;
+        this.history.add(em);
+        return em;
+  
   }  
   
-  public void deleteEmployee(EmployeeProfile em){
-      history.remove(em);
-}
   
+  public EmployeeProfile findName(String emName){
+      for(EmployeeProfile em : history){
+          if(em.getName().equals(emName)){
+              return em;
+          }
+      }
+    return null;
+    } 
+  
+  
+// public EmployeeProfile findEmployeeId(String EmployeeId){
+//      for(EmployeeProfile em : history){
+//          if(em.getEmpID().equals(EmployeeId)){
+//              return em;
+//          }
+//      }
+//    return null;
+//    } 
+ 
+ public EmployeeProfile findPhoneNumber(String PhoneNumber){
+      for(EmployeeProfile em : history){
+          if(em.getPhoneNumber().equalsIgnoreCase(PhoneNumber)){
+              return em;
+          }
+      }
+    return null;
+    } 
+ 
+ public EmployeeProfile findEmailId(String EmailId){
+      for(EmployeeProfile em : history){
+          if(em.getEmailId().equals(EmailId)){
+              return em;
+          }
+      }
+    return null;
+    } 
+
+public void deleteEmployee(EmployeeProfile em){
+      history.remove(em);
+ 
+}
 }
