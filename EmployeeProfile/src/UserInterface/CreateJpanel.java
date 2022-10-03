@@ -61,7 +61,7 @@ public class CreateJpanel extends javax.swing.JPanel {
 
         jLabel8.setText("jLabel8");
 
-        lblTitle.setFont(new java.awt.Font("Segoe UI Semilight", 1, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Segoe UI Semilight", 1, 36)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Create Employee Profile");
 
@@ -217,7 +217,7 @@ public class CreateJpanel extends javax.swing.JPanel {
                     .addComponent(txtImagePath, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btnSave)
-                .addContainerGap(139, Short.MAX_VALUE))
+                .addContainerGap(116, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {txtAge, txtEmailID, txtEmployeeID, txtGender, txtImagePath, txtLevel, txtName, txtPhoneNum, txtPositionTilte, txtStartDate, txtTeamInfo});
