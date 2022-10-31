@@ -7,7 +7,7 @@ import model.Doctor;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class ViewDoctorJPanel extends javax.swing.JPanel {
 
@@ -50,7 +50,7 @@ public class ViewDoctorJPanel extends javax.swing.JPanel {
         lblLName = new javax.swing.JLabel();
         txtLName = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblDoctorMgmt.setFont(new java.awt.Font("Operator Mono", 1, 24)); // NOI18N
         lblDoctorMgmt.setForeground(new java.awt.Color(255, 255, 255));
@@ -68,7 +68,7 @@ public class ViewDoctorJPanel extends javax.swing.JPanel {
 
         txtAge.setFont(new java.awt.Font("Operator Mono", 0, 13)); // NOI18N
 
-        btnSave.setBackground(new java.awt.Color(51, 102, 255));
+        btnSave.setBackground(new java.awt.Color(51, 153, 0));
         btnSave.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnSave.setForeground(new java.awt.Color(255, 255, 255));
         btnSave.setText("Save");
@@ -79,7 +79,7 @@ public class ViewDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnUpdate.setBackground(new java.awt.Color(51, 102, 255));
+        btnUpdate.setBackground(new java.awt.Color(51, 153, 0));
         btnUpdate.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdate.setText("Update");
@@ -90,10 +90,10 @@ public class ViewDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(51, 102, 255));
+        btnBack.setBackground(new java.awt.Color(51, 153, 0));
         btnBack.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("<- Back");
+        btnBack.setText("< Back");
         btnBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

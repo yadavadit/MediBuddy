@@ -10,7 +10,7 @@ import model.HospitalDirectory;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class ManageHospitalsJPanel extends javax.swing.JPanel {
 
@@ -77,7 +77,7 @@ public class ManageHospitalsJPanel extends javax.swing.JPanel {
         txtSearchHospital = new javax.swing.JTextField();
         btnSearchHospital = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblPersonMgmt.setFont(new java.awt.Font("Operator Mono", 1, 24)); // NOI18N
         lblPersonMgmt.setForeground(new java.awt.Color(255, 255, 255));
@@ -102,7 +102,7 @@ public class ManageHospitalsJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblHospital);
 
-        btnRefresh.setBackground(new java.awt.Color(51, 102, 255));
+        btnRefresh.setBackground(new java.awt.Color(204, 204, 0));
         btnRefresh.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnRefresh.setForeground(new java.awt.Color(255, 255, 255));
         btnRefresh.setText("Refresh Table");
@@ -113,10 +113,10 @@ public class ManageHospitalsJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(51, 102, 255));
+        btnBack.setBackground(new java.awt.Color(51, 153, 0));
         btnBack.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("<- Back");
+        btnBack.setText("< Back");
         btnBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,7 +124,7 @@ public class ManageHospitalsJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnDeleteHospital.setBackground(new java.awt.Color(51, 102, 255));
+        btnDeleteHospital.setBackground(new java.awt.Color(51, 153, 0));
         btnDeleteHospital.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnDeleteHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnDeleteHospital.setText("Delete Hospital");
@@ -136,7 +136,7 @@ public class ManageHospitalsJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnViewHospital.setBackground(new java.awt.Color(51, 102, 255));
+        btnViewHospital.setBackground(new java.awt.Color(51, 153, 0));
         btnViewHospital.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnViewHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnViewHospital.setText("View Hospital");
@@ -147,7 +147,7 @@ public class ManageHospitalsJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnCreateHospital.setBackground(new java.awt.Color(51, 102, 255));
+        btnCreateHospital.setBackground(new java.awt.Color(51, 153, 0));
         btnCreateHospital.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnCreateHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateHospital.setText("Create Hospital");
@@ -158,7 +158,7 @@ public class ManageHospitalsJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnUpdateHospital.setBackground(new java.awt.Color(51, 102, 255));
+        btnUpdateHospital.setBackground(new java.awt.Color(51, 153, 0));
         btnUpdateHospital.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnUpdateHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdateHospital.setText("Update Hospital");
@@ -174,7 +174,7 @@ public class ManageHospitalsJPanel extends javax.swing.JPanel {
 
         txtSearchHospital.setFont(new java.awt.Font("Operator Mono", 0, 13)); // NOI18N
 
-        btnSearchHospital.setBackground(new java.awt.Color(51, 102, 255));
+        btnSearchHospital.setBackground(new java.awt.Color(51, 153, 0));
         btnSearchHospital.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnSearchHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnSearchHospital.setText("Search Hospital by Name");

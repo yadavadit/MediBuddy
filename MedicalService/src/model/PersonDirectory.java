@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class PersonDirectory {
 

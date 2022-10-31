@@ -12,7 +12,7 @@ import model.PersonDirectory;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class CreatePersonJPanel extends javax.swing.JPanel {
 
@@ -61,16 +61,16 @@ public class CreatePersonJPanel extends javax.swing.JPanel {
         tblHouse = new javax.swing.JTable();
         btnHouse = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblCreatePerson.setFont(new java.awt.Font("Operator Mono", 1, 24)); // NOI18N
         lblCreatePerson.setForeground(new java.awt.Color(255, 255, 255));
         lblCreatePerson.setText("Create Person Profile");
 
-        btnBack.setBackground(new java.awt.Color(51, 102, 255));
+        btnBack.setBackground(new java.awt.Color(51, 153, 0));
         btnBack.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("<- Back");
+        btnBack.setText("< Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -99,7 +99,7 @@ public class CreatePersonJPanel extends javax.swing.JPanel {
 
         txtLName.setFont(new java.awt.Font("Operator Mono", 0, 13)); // NOI18N
 
-        btnCreatePerson.setBackground(new java.awt.Color(51, 102, 255));
+        btnCreatePerson.setBackground(new java.awt.Color(51, 153, 0));
         btnCreatePerson.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnCreatePerson.setForeground(new java.awt.Color(255, 255, 255));
         btnCreatePerson.setText("Create Person");

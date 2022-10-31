@@ -2,9 +2,9 @@ package model;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
-public class Doctor extends Person {
+public class Doctor {
 
     private String firstName;
     private String lastName;

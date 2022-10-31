@@ -13,7 +13,7 @@ import ui.Community.ManageCommunityJPanel;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class LandingPageCommunity extends javax.swing.JPanel {
 
@@ -54,13 +54,13 @@ public class LandingPageCommunity extends javax.swing.JPanel {
         lblLanding = new javax.swing.JLabel();
         btnCommunityMgmt = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblLanding.setFont(new java.awt.Font("Operator Mono", 1, 36)); // NOI18N
         lblLanding.setForeground(new java.awt.Color(255, 255, 255));
         lblLanding.setText("Community Administrator");
 
-        btnCommunityMgmt.setBackground(new java.awt.Color(51, 102, 255));
+        btnCommunityMgmt.setBackground(new java.awt.Color(102, 153, 0));
         btnCommunityMgmt.setFont(new java.awt.Font("Operator Mono", 1, 18)); // NOI18N
         btnCommunityMgmt.setForeground(new java.awt.Color(255, 255, 255));
         btnCommunityMgmt.setText("Community Directory");

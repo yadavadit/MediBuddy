@@ -11,7 +11,7 @@ import model.VitalSigns;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class ViewVitalSignEncounters extends javax.swing.JPanel {
 
@@ -57,7 +57,7 @@ public class ViewVitalSignEncounters extends javax.swing.JPanel {
         btnDeleteEncounter = new javax.swing.JButton();
         btnEditEncounter = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblLanding.setFont(new java.awt.Font("Operator Mono", 1, 24)); // NOI18N
         lblLanding.setForeground(new java.awt.Color(255, 255, 255));
@@ -78,10 +78,10 @@ public class ViewVitalSignEncounters extends javax.swing.JPanel {
         lblLanding2.setForeground(new java.awt.Color(255, 255, 255));
         lblLanding2.setText("Encounter History");
 
-        btnBack.setBackground(new java.awt.Color(51, 102, 255));
+        btnBack.setBackground(new java.awt.Color(51, 153, 0));
         btnBack.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("<- Back");
+        btnBack.setText("< Back");
         btnBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,7 +89,7 @@ public class ViewVitalSignEncounters extends javax.swing.JPanel {
             }
         });
 
-        btnRefreshEncounter.setBackground(new java.awt.Color(51, 102, 255));
+        btnRefreshEncounter.setBackground(new java.awt.Color(51, 153, 0));
         btnRefreshEncounter.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnRefreshEncounter.setForeground(new java.awt.Color(255, 255, 255));
         btnRefreshEncounter.setText("Refresh");
@@ -100,7 +100,7 @@ public class ViewVitalSignEncounters extends javax.swing.JPanel {
             }
         });
 
-        btnViewEncounterDetails.setBackground(new java.awt.Color(51, 102, 255));
+        btnViewEncounterDetails.setBackground(new java.awt.Color(51, 153, 0));
         btnViewEncounterDetails.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnViewEncounterDetails.setForeground(new java.awt.Color(255, 255, 255));
         btnViewEncounterDetails.setText("View");
@@ -111,7 +111,7 @@ public class ViewVitalSignEncounters extends javax.swing.JPanel {
             }
         });
 
-        btnDeleteEncounter.setBackground(new java.awt.Color(51, 102, 255));
+        btnDeleteEncounter.setBackground(new java.awt.Color(51, 153, 0));
         btnDeleteEncounter.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnDeleteEncounter.setForeground(new java.awt.Color(255, 255, 255));
         btnDeleteEncounter.setText("Delete");
@@ -122,7 +122,7 @@ public class ViewVitalSignEncounters extends javax.swing.JPanel {
             }
         });
 
-        btnEditEncounter.setBackground(new java.awt.Color(51, 102, 255));
+        btnEditEncounter.setBackground(new java.awt.Color(51, 153, 0));
         btnEditEncounter.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnEditEncounter.setForeground(new java.awt.Color(255, 255, 255));
         btnEditEncounter.setText("Edit");
@@ -158,7 +158,7 @@ public class ViewVitalSignEncounters extends javax.swing.JPanel {
                         .addContainerGap(694, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnBack)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 419, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 423, Short.MAX_VALUE)
                         .addComponent(lblLanding)
                         .addGap(349, 349, 349))))
         );

@@ -17,7 +17,7 @@ import ui.Person.ManagePersonsJPanel;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class LandingPageSystem extends javax.swing.JPanel {
 
@@ -62,13 +62,13 @@ public class LandingPageSystem extends javax.swing.JPanel {
         btnDoctorMgmt = new javax.swing.JButton();
         btnCommunityMgmt = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblLanding.setFont(new java.awt.Font("Operator Mono", 1, 36)); // NOI18N
         lblLanding.setForeground(new java.awt.Color(255, 255, 255));
         lblLanding.setText("Administrator");
 
-        btnPersonMgmt.setBackground(new java.awt.Color(51, 102, 255));
+        btnPersonMgmt.setBackground(new java.awt.Color(102, 153, 0));
         btnPersonMgmt.setFont(new java.awt.Font("Operator Mono", 1, 18)); // NOI18N
         btnPersonMgmt.setForeground(new java.awt.Color(255, 255, 255));
         btnPersonMgmt.setText("Person Directory");
@@ -79,7 +79,7 @@ public class LandingPageSystem extends javax.swing.JPanel {
             }
         });
 
-        btnHospitalMgmt.setBackground(new java.awt.Color(51, 102, 255));
+        btnHospitalMgmt.setBackground(new java.awt.Color(102, 153, 0));
         btnHospitalMgmt.setFont(new java.awt.Font("Operator Mono", 1, 18)); // NOI18N
         btnHospitalMgmt.setForeground(new java.awt.Color(255, 255, 255));
         btnHospitalMgmt.setText("Hospital Directory");
@@ -90,7 +90,7 @@ public class LandingPageSystem extends javax.swing.JPanel {
             }
         });
 
-        btnPatientMgmt.setBackground(new java.awt.Color(51, 102, 255));
+        btnPatientMgmt.setBackground(new java.awt.Color(153, 153, 0));
         btnPatientMgmt.setFont(new java.awt.Font("Operator Mono", 1, 18)); // NOI18N
         btnPatientMgmt.setForeground(new java.awt.Color(255, 255, 255));
         btnPatientMgmt.setText("Patient Directory");
@@ -101,7 +101,7 @@ public class LandingPageSystem extends javax.swing.JPanel {
             }
         });
 
-        btnDoctorMgmt.setBackground(new java.awt.Color(51, 102, 255));
+        btnDoctorMgmt.setBackground(new java.awt.Color(204, 204, 0));
         btnDoctorMgmt.setFont(new java.awt.Font("Operator Mono", 1, 18)); // NOI18N
         btnDoctorMgmt.setForeground(new java.awt.Color(255, 255, 255));
         btnDoctorMgmt.setText("Doctor Directory");
@@ -112,7 +112,7 @@ public class LandingPageSystem extends javax.swing.JPanel {
             }
         });
 
-        btnCommunityMgmt.setBackground(new java.awt.Color(51, 102, 255));
+        btnCommunityMgmt.setBackground(new java.awt.Color(153, 153, 0));
         btnCommunityMgmt.setFont(new java.awt.Font("Operator Mono", 1, 18)); // NOI18N
         btnCommunityMgmt.setForeground(new java.awt.Color(255, 255, 255));
         btnCommunityMgmt.setText("Community Directory");
@@ -130,7 +130,7 @@ public class LandingPageSystem extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(347, 347, 347)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnHospitalMgmt, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnHospitalMgmt, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnPersonMgmt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblLanding, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -150,11 +150,11 @@ public class LandingPageSystem extends javax.swing.JPanel {
                 .addComponent(btnPatientMgmt, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnDoctorMgmt, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addGap(12, 12, 12)
                 .addComponent(btnCommunityMgmt, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
+                .addGap(18, 18, 18)
                 .addComponent(btnHospitalMgmt, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(32, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

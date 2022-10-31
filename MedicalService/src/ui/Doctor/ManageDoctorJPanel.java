@@ -12,7 +12,7 @@ import model.PersonDirectory;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class ManageDoctorJPanel extends javax.swing.JPanel {
 
@@ -82,7 +82,7 @@ public class ManageDoctorJPanel extends javax.swing.JPanel {
         btnSearchDoctor = new javax.swing.JButton();
         btnPatientVitals = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblDoctorMgmt.setFont(new java.awt.Font("Operator Mono", 1, 24)); // NOI18N
         lblDoctorMgmt.setForeground(new java.awt.Color(255, 255, 255));
@@ -107,7 +107,7 @@ public class ManageDoctorJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDoctor);
 
-        btnRefresh.setBackground(new java.awt.Color(51, 102, 255));
+        btnRefresh.setBackground(new java.awt.Color(204, 204, 0));
         btnRefresh.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnRefresh.setForeground(new java.awt.Color(255, 255, 255));
         btnRefresh.setText("Refresh Table");
@@ -118,10 +118,10 @@ public class ManageDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(51, 102, 255));
+        btnBack.setBackground(new java.awt.Color(51, 153, 0));
         btnBack.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("<- Back");
+        btnBack.setText("< Back");
         btnBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +129,7 @@ public class ManageDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnDeleteDoctor.setBackground(new java.awt.Color(51, 102, 255));
+        btnDeleteDoctor.setBackground(new java.awt.Color(51, 153, 0));
         btnDeleteDoctor.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnDeleteDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnDeleteDoctor.setText("Delete Doctor");
@@ -140,7 +140,7 @@ public class ManageDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnViewDoctor.setBackground(new java.awt.Color(51, 102, 255));
+        btnViewDoctor.setBackground(new java.awt.Color(51, 153, 0));
         btnViewDoctor.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnViewDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnViewDoctor.setText("View Doctor");
@@ -151,7 +151,7 @@ public class ManageDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnCreateDoctor.setBackground(new java.awt.Color(51, 102, 255));
+        btnCreateDoctor.setBackground(new java.awt.Color(51, 153, 0));
         btnCreateDoctor.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnCreateDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateDoctor.setText("Create Doctor");
@@ -162,7 +162,7 @@ public class ManageDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnUpdateDoctor.setBackground(new java.awt.Color(51, 102, 255));
+        btnUpdateDoctor.setBackground(new java.awt.Color(51, 153, 0));
         btnUpdateDoctor.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnUpdateDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdateDoctor.setText("Update Doctor");
@@ -177,7 +177,7 @@ public class ManageDoctorJPanel extends javax.swing.JPanel {
 
         txtSearchDoctor.setFont(new java.awt.Font("Operator Mono", 0, 13)); // NOI18N
 
-        btnSearchDoctor.setBackground(new java.awt.Color(51, 102, 255));
+        btnSearchDoctor.setBackground(new java.awt.Color(51, 153, 0));
         btnSearchDoctor.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnSearchDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnSearchDoctor.setText("Search Doctor by Name");
@@ -188,6 +188,7 @@ public class ManageDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnPatientVitals.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         btnPatientVitals.setText("Manage Patients");
         btnPatientVitals.setToolTipText("");
         btnPatientVitals.addActionListener(new java.awt.event.ActionListener() {

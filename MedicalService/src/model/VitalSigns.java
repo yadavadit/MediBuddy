@@ -5,7 +5,7 @@ import java.util.Date;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class VitalSigns {
 

@@ -10,7 +10,7 @@ import model.HospitalDirectory;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class CreateDoctorJPanel extends javax.swing.JPanel {
 
@@ -53,16 +53,16 @@ public class CreateDoctorJPanel extends javax.swing.JPanel {
         txtHospital = new javax.swing.JTextField();
         btnCreateDoctor = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblCreatePerson.setFont(new java.awt.Font("Operator Mono", 1, 24)); // NOI18N
         lblCreatePerson.setForeground(new java.awt.Color(255, 255, 255));
         lblCreatePerson.setText("Create Doctor Profile");
 
-        btnBack.setBackground(new java.awt.Color(51, 102, 255));
+        btnBack.setBackground(new java.awt.Color(51, 153, 0));
         btnBack.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("<- Back");
+        btnBack.setText("< Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -99,7 +99,7 @@ public class CreateDoctorJPanel extends javax.swing.JPanel {
 
         txtHospital.setFont(new java.awt.Font("Operator Mono", 0, 13)); // NOI18N
 
-        btnCreateDoctor.setBackground(new java.awt.Color(51, 102, 255));
+        btnCreateDoctor.setBackground(new java.awt.Color(51, 153, 0));
         btnCreateDoctor.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnCreateDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateDoctor.setText("Create Doctor");
@@ -139,7 +139,7 @@ public class CreateDoctorJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(415, 415, 415)
                         .addComponent(btnCreateDoctor)))
-                .addContainerGap(379, Short.MAX_VALUE))
+                .addContainerGap(383, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

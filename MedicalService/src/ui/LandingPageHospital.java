@@ -13,7 +13,7 @@ import ui.Hospital.ManageHospitalsJPanel;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class LandingPageHospital extends javax.swing.JPanel {
 
@@ -54,13 +54,13 @@ public class LandingPageHospital extends javax.swing.JPanel {
         lblLanding = new javax.swing.JLabel();
         btnHospitalMgmt = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblLanding.setFont(new java.awt.Font("Operator Mono", 1, 36)); // NOI18N
         lblLanding.setForeground(new java.awt.Color(255, 255, 255));
         lblLanding.setText("Hospital Administrator");
 
-        btnHospitalMgmt.setBackground(new java.awt.Color(51, 102, 255));
+        btnHospitalMgmt.setBackground(new java.awt.Color(102, 153, 0));
         btnHospitalMgmt.setFont(new java.awt.Font("Operator Mono", 1, 18)); // NOI18N
         btnHospitalMgmt.setForeground(new java.awt.Color(255, 255, 255));
         btnHospitalMgmt.setText("Hospital Directory");

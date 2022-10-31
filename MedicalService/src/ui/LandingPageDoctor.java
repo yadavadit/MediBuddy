@@ -13,7 +13,7 @@ import ui.Doctor.ManageDoctorJPanel;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class LandingPageDoctor extends javax.swing.JPanel {
 
@@ -54,13 +54,13 @@ public class LandingPageDoctor extends javax.swing.JPanel {
         lblLanding = new javax.swing.JLabel();
         btnDoctorMgmt = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblLanding.setFont(new java.awt.Font("Operator Mono", 1, 36)); // NOI18N
         lblLanding.setForeground(new java.awt.Color(255, 255, 255));
         lblLanding.setText("Doctor Administrator");
 
-        btnDoctorMgmt.setBackground(new java.awt.Color(51, 102, 255));
+        btnDoctorMgmt.setBackground(new java.awt.Color(102, 153, 0));
         btnDoctorMgmt.setFont(new java.awt.Font("Operator Mono", 1, 18)); // NOI18N
         btnDoctorMgmt.setForeground(new java.awt.Color(255, 255, 255));
         btnDoctorMgmt.setText("Doctor Directory");

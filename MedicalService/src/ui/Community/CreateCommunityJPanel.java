@@ -13,7 +13,7 @@ import model.HouseDirectory;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class CreateCommunityJPanel extends javax.swing.JPanel {
 
@@ -56,16 +56,16 @@ public class CreateCommunityJPanel extends javax.swing.JPanel {
         txtHouse = new javax.swing.JTextField();
         btnCreateCommunity = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblCreatePerson.setFont(new java.awt.Font("Operator Mono", 1, 24)); // NOI18N
         lblCreatePerson.setForeground(new java.awt.Color(255, 255, 255));
         lblCreatePerson.setText("Create Community Profile");
 
-        btnBack.setBackground(new java.awt.Color(51, 102, 255));
+        btnBack.setBackground(new java.awt.Color(51, 153, 0));
         btnBack.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("<- Back");
+        btnBack.setText("<  Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -91,8 +91,8 @@ public class CreateCommunityJPanel extends javax.swing.JPanel {
 
         txtHouse.setFont(new java.awt.Font("Operator Mono", 0, 13)); // NOI18N
 
-        btnCreateCommunity.setBackground(new java.awt.Color(51, 102, 255));
-        btnCreateCommunity.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
+        btnCreateCommunity.setBackground(new java.awt.Color(51, 153, 0));
+        btnCreateCommunity.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnCreateCommunity.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateCommunity.setText("Create Community");
         btnCreateCommunity.setToolTipText("");
@@ -119,16 +119,15 @@ public class CreateCommunityJPanel extends javax.swing.JPanel {
                     .addComponent(txtCity))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addComponent(btnBack)
-                        .addGap(180, 180, 180)
-                        .addComponent(lblCreatePerson))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(415, 415, 415)
-                        .addComponent(btnCreateCommunity)))
-                .addContainerGap(327, Short.MAX_VALUE))
+                .addGap(79, 79, 79)
+                .addComponent(btnBack)
+                .addGap(180, 180, 180)
+                .addComponent(lblCreatePerson)
+                .addContainerGap(328, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCreateCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(358, 358, 358))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -149,9 +148,9 @@ public class CreateCommunityJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblAge)
                     .addComponent(txtCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
-                .addComponent(btnCreateCommunity)
-                .addGap(117, 117, 117))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
+                .addComponent(btnCreateCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(139, 139, 139))
         );
     }// </editor-fold>//GEN-END:initComponents
 

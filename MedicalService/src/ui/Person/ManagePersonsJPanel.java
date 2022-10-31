@@ -14,7 +14,7 @@ import model.PersonDirectory;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class ManagePersonsJPanel extends javax.swing.JPanel {
 
@@ -96,7 +96,7 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
         txtSearchPerson = new javax.swing.JTextField();
         btnSearchPerson = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(102, 153, 255));
+        setBackground(new java.awt.Color(153, 204, 0));
 
         lblPersonMgmt.setFont(new java.awt.Font("Operator Mono", 1, 24)); // NOI18N
         lblPersonMgmt.setForeground(new java.awt.Color(255, 255, 255));
@@ -121,7 +121,7 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblPerson);
 
-        btnRefresh.setBackground(new java.awt.Color(51, 102, 255));
+        btnRefresh.setBackground(new java.awt.Color(204, 204, 0));
         btnRefresh.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnRefresh.setForeground(new java.awt.Color(255, 255, 255));
         btnRefresh.setText("Refresh Table");
@@ -132,10 +132,10 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(51, 102, 255));
+        btnBack.setBackground(new java.awt.Color(51, 153, 0));
         btnBack.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("<- Back");
+        btnBack.setText("< Back");
         btnBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,7 +143,7 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnDeletePerson.setBackground(new java.awt.Color(51, 102, 255));
+        btnDeletePerson.setBackground(new java.awt.Color(51, 153, 0));
         btnDeletePerson.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnDeletePerson.setForeground(new java.awt.Color(255, 255, 255));
         btnDeletePerson.setText("Delete Person");
@@ -154,7 +154,7 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnViewPerson.setBackground(new java.awt.Color(51, 102, 255));
+        btnViewPerson.setBackground(new java.awt.Color(51, 153, 0));
         btnViewPerson.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnViewPerson.setForeground(new java.awt.Color(255, 255, 255));
         btnViewPerson.setText("View Person");
@@ -165,7 +165,7 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnCreatePerson.setBackground(new java.awt.Color(51, 102, 255));
+        btnCreatePerson.setBackground(new java.awt.Color(51, 153, 0));
         btnCreatePerson.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnCreatePerson.setForeground(new java.awt.Color(255, 255, 255));
         btnCreatePerson.setText("Create Person");
@@ -176,7 +176,7 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnUpdatePerson.setBackground(new java.awt.Color(51, 102, 255));
+        btnUpdatePerson.setBackground(new java.awt.Color(51, 153, 0));
         btnUpdatePerson.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnUpdatePerson.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdatePerson.setText("Update Person");
@@ -191,7 +191,7 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
 
         txtSearchPerson.setFont(new java.awt.Font("Operator Mono", 0, 13)); // NOI18N
 
-        btnSearchPerson.setBackground(new java.awt.Color(51, 102, 255));
+        btnSearchPerson.setBackground(new java.awt.Color(51, 153, 0));
         btnSearchPerson.setFont(new java.awt.Font("Operator Mono", 1, 13)); // NOI18N
         btnSearchPerson.setForeground(new java.awt.Color(255, 255, 255));
         btnSearchPerson.setText("Search Person by Name");

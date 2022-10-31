@@ -2,7 +2,7 @@ package model;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class Community {
 

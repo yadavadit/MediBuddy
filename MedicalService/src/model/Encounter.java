@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 
 /**
  *
- * @author Rishabh
+ * @author Aditi Yadav
  */
 public class Encounter {
 
